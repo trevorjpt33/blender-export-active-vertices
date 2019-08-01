@@ -12,7 +12,7 @@ bl_info = {
     "category": "Mesh"}
 
 docs = str(plib.home().joinpath('Documents'))
-destfile = str(docs) + '//blendSelection.txt'
+destfile = docs + '//blendSelection.txt'
 
 def getBlendVerts(self, context):
 
@@ -34,7 +34,7 @@ def getBlendVerts(self, context):
     blendOut = blendIn.translate({ord(i): None for i in r' []'})
 
     print('The', len(blend_vertSel), 'vertex IDs in your Blender selection saved.')
-    print('Check "boneAssign_tool" folder for a file named "blendSelection.txt".')
+    print('Check your Documents folder for a file named "blendSelection.txt".')
 
     return blendOut
 
